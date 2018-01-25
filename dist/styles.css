@@ -22,7 +22,8 @@ body {
           flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  padding-bottom: 32px; }
   .page-home .background {
     position: fixed;
     top: 0;
@@ -47,6 +48,7 @@ body {
     font-size: 64px;
     color: white;
     margin-left: 32px;
+    margin-top: 32px;
     opacity: 0;
     -webkit-animation: fadein 2s;
             animation: fadein 2s;
@@ -189,7 +191,8 @@ h2 {
   width: 700px;
   max-width: 100%;
   margin: 0 auto;
-  padding: 0 16px; }
+  padding: 0 16px;
+  padding-bottom: 32px; }
   .content .lead {
     font-family: 'Raleway', serif;
     font-size: 28px;
@@ -200,7 +203,16 @@ h2 {
     font-size: 21px;
     line-height: 1.4em;
     font-weight: 300;
-    margin: 1em 0; }
+    margin: 1.5em 0; }
+  .content li {
+    margin: 0.5em 0; }
+  .content .img-center-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   .content img {
     width: 140%;
     margin-left: -20%;
