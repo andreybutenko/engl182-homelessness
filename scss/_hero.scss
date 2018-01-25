@@ -6,7 +6,7 @@
   background-position: center;
   position: relative;
   max-width: 100vw;
-  overflow-x: hidden;
+  overflow: hidden;
 
   &.hero-jungle .hero-img {
     background-image: url('/img/jungle.jpg');
