@@ -1,0 +1,88 @@
+.city-strip {
+  background-image: url('/img/city-tile.png');
+  background-repeat: repeat;
+  background-size: 50%;
+  height: 50px;
+
+  @media (max-width: 825px) {
+    height: 30px;
+  }
+}
+
+.site-title {
+  position: fixed;
+  top: 0;
+
+  height: 50px;
+  font-family: 'Ultra', serif;
+  color: white;
+  font-size: 48px;
+  z-index: 999;
+
+  @media (max-width: 825px) {
+    font-size: 24px;
+    height: 30px;
+  }
+
+  @media (max-width: 1332px) {
+    position: absolute;
+  }
+}
+
+.nav {
+  width: 100%;
+
+  position: sticky;
+  top: 0;
+
+  display: flex;
+  flex-direction: row;
+  background-color: #292929;
+  justify-content: flex-end;
+  z-index: 995;
+
+  &.hide-small {
+    @media (max-width: 620px) {
+      display: none;
+    }
+  }
+
+  &.show-small {
+    display: none;
+
+    @media (max-width: 620px) {
+      display: flex;
+    }
+
+    a {
+      flex: 1;
+      text-align: center;
+      padding-bottom: 16px;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    padding: 16px;
+    padding-bottom: 6px;
+    color: white;
+    border-bottom: 0px groove #3498db;
+    transition: 250ms all;
+
+    &.active {
+      border-bottom: 10px groove #ffffff;
+
+      &:hover {
+        border-bottom-color: #cccccc;
+      }
+    }
+
+    &:hover {
+      border-bottom-width: 10px;
+    }
+  }
+
+  @media (max-width: 825px) {
+    font-size: 12px;
+  }
+}

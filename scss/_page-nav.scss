@@ -1,0 +1,31 @@
+.page-nav {
+  height: 100%;
+
+  .city-strip {
+    height: 120px;
+    background-image: url('/img/seattle.jpg');
+    background-size: cover;
+    background-position: top;
+  }
+
+  .site-title {
+    position: relative;
+    color: black;
+    text-align: center;
+  }
+
+  .nav-page {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    a {
+      flex: 1;
+      text-decoration: none;
+      color: black;
+      text-align: center;
+      padding: 16px;
+      border-bottom: 1px solid #ccc;
+    }
+  }
+}
